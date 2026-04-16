@@ -1,0 +1,10 @@
+2026-04-16 14:28:08 [INFO] photo_editor.classifier.setup_logger:57 - Logger initialized. Log file: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Documents\Repos\photo-editor\logs\photo_editor_20260416_142808.log
+2026-04-16 14:28:08 [INFO] photo_editor.profiles.setup_logger:57 - Logger initialized. Log file: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Documents\Repos\photo-editor\logs\photo_editor_20260416_142808.log
+2026-04-16 14:28:08 [INFO] photo_editor.loader.setup_logger:57 - Logger initialized. Log file: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Documents\Repos\photo-editor\logs\photo_editor_20260416_142808.log
+2026-04-16 14:28:08 [INFO] photo_editor.loader.<module>:42 - RAW image support enabled (rawpy available).
+2026-04-16 14:28:08 [INFO] photo_editor.gpu.setup_logger:57 - Logger initialized. Log file: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Documents\Repos\photo-editor\logs\photo_editor_20260416_142808.log
+2026-04-16 14:28:08 [INFO] photo_editor.edits.setup_logger:57 - Logger initialized. Log file: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Documents\Repos\photo-editor\logs\photo_editor_20260416_142808.log
+2026-04-16 14:28:08 [INFO] photo_editor.metadata.setup_logger:57 - Logger initialized. Log file: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Documents\Repos\photo-editor\logs\photo_editor_20260416_142808.log
+2026-04-16 14:28:08 [INFO] photo_editor.output.setup_logger:57 - Logger initialized. Log file: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Documents\Repos\photo-editor\logs\photo_editor_20260416_142808.log
+2026-04-16 14:28:08 [INFO] photo_editor.pipeline.setup_logger:57 - Logger initialized. Log file: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Documents\Repos\photo-editor\logs\photo_editor_20260416_142808.log
+2026-04-16 14:28:08 [INFO] photo_editor.ui.setup_logger:57 - Logger initialized. Log file: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Documents\Repos\photo-editor\logs\photo_editor_20260416_142808.log

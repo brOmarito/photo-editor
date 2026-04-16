@@ -1,0 +1,443 @@
+2026-04-16 11:34:43 [INFO] photo_editor.classifier.setup_logger:57 - Logger initialized. Log file: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Documents\Repos\photo-editor\logs\photo_editor_20260416_113443.log
+2026-04-16 11:34:43 [INFO] photo_editor.profiles.setup_logger:57 - Logger initialized. Log file: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Documents\Repos\photo-editor\logs\photo_editor_20260416_113443.log
+2026-04-16 11:34:43 [INFO] photo_editor.loader.setup_logger:57 - Logger initialized. Log file: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Documents\Repos\photo-editor\logs\photo_editor_20260416_113443.log
+2026-04-16 11:34:43 [INFO] photo_editor.loader.<module>:42 - RAW image support enabled (rawpy available).
+2026-04-16 11:34:43 [INFO] photo_editor.gpu.setup_logger:57 - Logger initialized. Log file: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Documents\Repos\photo-editor\logs\photo_editor_20260416_113443.log
+2026-04-16 11:34:43 [INFO] photo_editor.edits.setup_logger:57 - Logger initialized. Log file: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Documents\Repos\photo-editor\logs\photo_editor_20260416_113443.log
+2026-04-16 11:34:43 [INFO] photo_editor.metadata.setup_logger:57 - Logger initialized. Log file: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Documents\Repos\photo-editor\logs\photo_editor_20260416_113443.log
+2026-04-16 11:34:43 [INFO] photo_editor.output.setup_logger:57 - Logger initialized. Log file: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Documents\Repos\photo-editor\logs\photo_editor_20260416_113443.log
+2026-04-16 11:34:43 [INFO] photo_editor.pipeline.setup_logger:57 - Logger initialized. Log file: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Documents\Repos\photo-editor\logs\photo_editor_20260416_113443.log
+2026-04-16 11:34:43 [INFO] photo_editor.ui.setup_logger:57 - Logger initialized. Log file: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Documents\Repos\photo-editor\logs\photo_editor_20260416_113443.log
+2026-04-16 11:34:43 [INFO] photo_editor.setup_logger:57 - Logger initialized. Log file: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Documents\Repos\photo-editor\logs\photo_editor_20260416_113443.log
+2026-04-16 11:34:43 [INFO] photo_editor.main:33 - Starting Photo Editor application...
+2026-04-16 11:34:44 [INFO] photo_editor.main:82 - Application window shown. Ready.
+2026-04-16 11:34:56 [INFO] photo_editor.loader.discover_images:90 - Discovered 4 image(s) in 'C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan'
+2026-04-16 11:34:56 [INFO] photo_editor.loader.discover_images:90 - Discovered 4 image(s) in 'C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan'
+2026-04-16 11:34:56 [DEBUG] photo_editor.loader._load_standard:160 - Loaded (OpenCV): C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9860~2.jpg  shape=(729, 1094, 3)
+2026-04-16 11:34:56 [DEBUG] photo_editor.loader._load_standard:160 - Loaded (OpenCV): C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9860~2.jpg  shape=(729, 1094, 3)
+2026-04-16 11:34:57 [DEBUG] photo_editor.classifier.classify_image:219 - Image features: {'brightness': 86.79, 'saturation': 68.53, 'colorfulness': np.float64(24.84), 'edge_density': 0.0199, 'aspect_ratio': 1.501, 'num_faces': 0, 'bg_variance': 15.73, 'width': 1094, 'height': 729}
+2026-04-16 11:34:57 [DEBUG] photo_editor.classifier.classify_image:219 - Image features: {'brightness': 86.79, 'saturation': 68.53, 'colorfulness': np.float64(24.84), 'edge_density': 0.0199, 'aspect_ratio': 1.501, 'num_faces': 0, 'bg_variance': 15.73, 'width': 1094, 'height': 729}
+2026-04-16 11:34:57 [INFO] photo_editor.classifier.classify_image:291 - Classification: unknown (confidence=30%, faces=0)
+2026-04-16 11:34:57 [INFO] photo_editor.classifier.classify_image:291 - Classification: unknown (confidence=30%, faces=0)
+2026-04-16 11:34:57 [INFO] photo_editor.pipeline.process_single_image:169 - Processing: 1Q5A9860~2.jpg
+2026-04-16 11:34:57 [INFO] photo_editor.pipeline.process_single_image:169 - Processing: 1Q5A9860~2.jpg
+2026-04-16 11:34:57 [DEBUG] photo_editor.loader._load_standard:160 - Loaded (OpenCV): C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9860~2.jpg  shape=(729, 1094, 3)
+2026-04-16 11:34:57 [DEBUG] photo_editor.loader._load_standard:160 - Loaded (OpenCV): C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9860~2.jpg  shape=(729, 1094, 3)
+2026-04-16 11:34:57 [DEBUG] photo_editor.classifier.classify_image:219 - Image features: {'brightness': 86.79, 'saturation': 68.53, 'colorfulness': np.float64(24.84), 'edge_density': 0.0199, 'aspect_ratio': 1.501, 'num_faces': 0, 'bg_variance': 15.69, 'width': 1094, 'height': 729}
+2026-04-16 11:34:57 [DEBUG] photo_editor.classifier.classify_image:219 - Image features: {'brightness': 86.79, 'saturation': 68.53, 'colorfulness': np.float64(24.84), 'edge_density': 0.0199, 'aspect_ratio': 1.501, 'num_faces': 0, 'bg_variance': 15.69, 'width': 1094, 'height': 729}
+2026-04-16 11:34:57 [INFO] photo_editor.classifier.classify_image:291 - Classification: unknown (confidence=30%, faces=0)
+2026-04-16 11:34:57 [INFO] photo_editor.classifier.classify_image:291 - Classification: unknown (confidence=30%, faces=0)
+2026-04-16 11:34:57 [INFO] photo_editor.profiles.get_profile:407 - Profile: style=auto, category=unknown, strength=medium (×0.7)
+2026-04-16 11:34:57 [INFO] photo_editor.profiles.get_profile:407 - Profile: style=auto, category=unknown, strength=medium (×0.7)
+2026-04-16 11:34:57 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Auto Levels (auto_levels) params={'strength': 0.175, 'clip_percent': 0.5}
+2026-04-16 11:34:57 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Auto Levels (auto_levels) params={'strength': 0.175, 'clip_percent': 0.5}
+2026-04-16 11:34:57 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Exposure Correction (adjust_exposure) params={'strength': 0.24499999999999997, 'target_brightness': 128}
+2026-04-16 11:34:57 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Exposure Correction (adjust_exposure) params={'strength': 0.24499999999999997, 'target_brightness': 128}
+2026-04-16 11:34:57 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: White Balance (adjust_white_balance) params={'strength': 0.21}
+2026-04-16 11:34:57 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: White Balance (adjust_white_balance) params={'strength': 0.21}
+2026-04-16 11:34:57 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Highlight/Shadow Recovery (recover_highlights_shadows) params={'strength': 0.21}
+2026-04-16 11:34:57 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Highlight/Shadow Recovery (recover_highlights_shadows) params={'strength': 0.21}
+2026-04-16 11:34:57 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Contrast (adjust_contrast) params={'strength': 0.13999999999999999, 'clip_limit': 1.5}
+2026-04-16 11:34:57 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Contrast (adjust_contrast) params={'strength': 0.13999999999999999, 'clip_limit': 1.5}
+2026-04-16 11:34:57 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Tone Curve (apply_tone_curve) params={'strength': 0.105}
+2026-04-16 11:34:57 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Tone Curve (apply_tone_curve) params={'strength': 0.105}
+2026-04-16 11:34:57 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Vibrance (adjust_vibrance) params={'strength': 0.13999999999999999, 'amount': 15}
+2026-04-16 11:34:57 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Vibrance (adjust_vibrance) params={'strength': 0.13999999999999999, 'amount': 15}
+2026-04-16 11:34:57 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Noise Reduction (reduce_noise) params={'strength': 0.13999999999999999}
+2026-04-16 11:34:57 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Noise Reduction (reduce_noise) params={'strength': 0.13999999999999999}
+2026-04-16 11:34:57 [WARNING] photo_editor.pipeline.apply_profile:118 -   Edit step 'Noise Reduction' failed: OpenCV(4.13.0) :-1: error: (-5:Bad argument) in function 'fastNlMeansDenoisingColored'
+> Overload resolution failed:
+>  - 'hForColorComponents' is an invalid keyword argument for fastNlMeansDenoisingColored()
+>  - 'hForColorComponents' is an invalid keyword argument for fastNlMeansDenoisingColored()
+
+2026-04-16 11:34:57 [WARNING] photo_editor.pipeline.apply_profile:118 -   Edit step 'Noise Reduction' failed: OpenCV(4.13.0) :-1: error: (-5:Bad argument) in function 'fastNlMeansDenoisingColored'
+> Overload resolution failed:
+>  - 'hForColorComponents' is an invalid keyword argument for fastNlMeansDenoisingColored()
+>  - 'hForColorComponents' is an invalid keyword argument for fastNlMeansDenoisingColored()
+
+2026-04-16 11:34:57 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Sharpening (sharpen) params={'strength': 0.175, 'kernel_size': 3}
+2026-04-16 11:34:57 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Sharpening (sharpen) params={'strength': 0.175, 'kernel_size': 3}
+2026-04-16 11:34:57 [INFO] photo_editor.gpu._detect_gpu:38 - No CUDA-capable GPU detected. Using CPU processing.
+2026-04-16 11:34:57 [INFO] photo_editor.gpu._detect_gpu:38 - No CUDA-capable GPU detected. Using CPU processing.
+2026-04-16 11:34:57 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Straighten (auto_straighten) params={'strength': 0.35}
+2026-04-16 11:34:57 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Straighten (auto_straighten) params={'strength': 0.35}
+2026-04-16 11:34:57 [DEBUG] photo_editor.output.save_image:194 - Saved: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\Edited\1Q5A9860~2_edited.jpg (141 KB, 1094×729)
+2026-04-16 11:34:57 [DEBUG] photo_editor.output.save_image:194 - Saved: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\Edited\1Q5A9860~2_edited.jpg (141 KB, 1094×729)
+2026-04-16 11:34:57 [DEBUG] photo_editor.metadata.copy_metadata:99 - Metadata copied: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9860~2.jpg → C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\Edited\1Q5A9860~2_edited.jpg
+2026-04-16 11:34:57 [DEBUG] photo_editor.metadata.copy_metadata:99 - Metadata copied: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9860~2.jpg → C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\Edited\1Q5A9860~2_edited.jpg
+2026-04-16 11:34:57 [INFO] photo_editor.pipeline.process_single_image:227 -   Done: 1Q5A9860~2_edited.jpg (unknown, 0.3s)
+2026-04-16 11:34:57 [INFO] photo_editor.pipeline.process_single_image:227 -   Done: 1Q5A9860~2_edited.jpg (unknown, 0.3s)
+2026-04-16 11:35:30 [DEBUG] photo_editor.loader._load_standard:160 - Loaded (OpenCV): C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9861~2.jpg  shape=(729, 1094, 3)
+2026-04-16 11:35:30 [DEBUG] photo_editor.loader._load_standard:160 - Loaded (OpenCV): C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9861~2.jpg  shape=(729, 1094, 3)
+2026-04-16 11:35:30 [DEBUG] photo_editor.classifier.classify_image:219 - Image features: {'brightness': 131.59, 'saturation': 45.11, 'colorfulness': np.float64(22.73), 'edge_density': 0.0127, 'aspect_ratio': 1.501, 'num_faces': 0, 'bg_variance': 21.74, 'width': 1094, 'height': 729}
+2026-04-16 11:35:30 [DEBUG] photo_editor.classifier.classify_image:219 - Image features: {'brightness': 131.59, 'saturation': 45.11, 'colorfulness': np.float64(22.73), 'edge_density': 0.0127, 'aspect_ratio': 1.501, 'num_faces': 0, 'bg_variance': 21.74, 'width': 1094, 'height': 729}
+2026-04-16 11:35:30 [INFO] photo_editor.classifier.classify_image:291 - Classification: indoor (confidence=50%, faces=0)
+2026-04-16 11:35:30 [INFO] photo_editor.classifier.classify_image:291 - Classification: indoor (confidence=50%, faces=0)
+2026-04-16 11:35:30 [INFO] photo_editor.pipeline.process_single_image:169 - Processing: 1Q5A9861~2.jpg
+2026-04-16 11:35:30 [INFO] photo_editor.pipeline.process_single_image:169 - Processing: 1Q5A9861~2.jpg
+2026-04-16 11:35:30 [DEBUG] photo_editor.loader._load_standard:160 - Loaded (OpenCV): C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9861~2.jpg  shape=(729, 1094, 3)
+2026-04-16 11:35:30 [DEBUG] photo_editor.loader._load_standard:160 - Loaded (OpenCV): C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9861~2.jpg  shape=(729, 1094, 3)
+2026-04-16 11:35:30 [DEBUG] photo_editor.classifier.classify_image:219 - Image features: {'brightness': 131.59, 'saturation': 45.11, 'colorfulness': np.float64(22.73), 'edge_density': 0.0127, 'aspect_ratio': 1.501, 'num_faces': 0, 'bg_variance': 21.79, 'width': 1094, 'height': 729}
+2026-04-16 11:35:30 [DEBUG] photo_editor.classifier.classify_image:219 - Image features: {'brightness': 131.59, 'saturation': 45.11, 'colorfulness': np.float64(22.73), 'edge_density': 0.0127, 'aspect_ratio': 1.501, 'num_faces': 0, 'bg_variance': 21.79, 'width': 1094, 'height': 729}
+2026-04-16 11:35:30 [INFO] photo_editor.classifier.classify_image:291 - Classification: indoor (confidence=50%, faces=0)
+2026-04-16 11:35:30 [INFO] photo_editor.classifier.classify_image:291 - Classification: indoor (confidence=50%, faces=0)
+2026-04-16 11:35:30 [INFO] photo_editor.profiles.get_profile:407 - Profile: style=auto, category=indoor, strength=medium (×0.7)
+2026-04-16 11:35:30 [INFO] photo_editor.profiles.get_profile:407 - Profile: style=auto, category=indoor, strength=medium (×0.7)
+2026-04-16 11:35:30 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Auto Levels (auto_levels) params={'strength': 0.175, 'clip_percent': 0.5}
+2026-04-16 11:35:30 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Auto Levels (auto_levels) params={'strength': 0.175, 'clip_percent': 0.5}
+2026-04-16 11:35:30 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Exposure Correction (adjust_exposure) params={'strength': 0.24499999999999997, 'target_brightness': 128}
+2026-04-16 11:35:30 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Exposure Correction (adjust_exposure) params={'strength': 0.24499999999999997, 'target_brightness': 128}
+2026-04-16 11:35:30 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: White Balance (adjust_white_balance) params={'strength': 0.21}
+2026-04-16 11:35:30 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: White Balance (adjust_white_balance) params={'strength': 0.21}
+2026-04-16 11:35:30 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Highlight/Shadow Recovery (recover_highlights_shadows) params={'strength': 0.21}
+2026-04-16 11:35:30 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Highlight/Shadow Recovery (recover_highlights_shadows) params={'strength': 0.21}
+2026-04-16 11:35:30 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Contrast (adjust_contrast) params={'strength': 0.13999999999999999, 'clip_limit': 1.5}
+2026-04-16 11:35:30 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Contrast (adjust_contrast) params={'strength': 0.13999999999999999, 'clip_limit': 1.5}
+2026-04-16 11:35:30 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Tone Curve (apply_tone_curve) params={'strength': 0.105}
+2026-04-16 11:35:30 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Tone Curve (apply_tone_curve) params={'strength': 0.105}
+2026-04-16 11:35:30 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Vibrance (adjust_vibrance) params={'strength': 0.13999999999999999, 'amount': 15}
+2026-04-16 11:35:30 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Vibrance (adjust_vibrance) params={'strength': 0.13999999999999999, 'amount': 15}
+2026-04-16 11:35:30 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Noise Reduction (reduce_noise) params={'strength': 0.13999999999999999}
+2026-04-16 11:35:30 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Noise Reduction (reduce_noise) params={'strength': 0.13999999999999999}
+2026-04-16 11:35:30 [WARNING] photo_editor.pipeline.apply_profile:118 -   Edit step 'Noise Reduction' failed: OpenCV(4.13.0) :-1: error: (-5:Bad argument) in function 'fastNlMeansDenoisingColored'
+> Overload resolution failed:
+>  - 'hForColorComponents' is an invalid keyword argument for fastNlMeansDenoisingColored()
+>  - 'hForColorComponents' is an invalid keyword argument for fastNlMeansDenoisingColored()
+
+2026-04-16 11:35:30 [WARNING] photo_editor.pipeline.apply_profile:118 -   Edit step 'Noise Reduction' failed: OpenCV(4.13.0) :-1: error: (-5:Bad argument) in function 'fastNlMeansDenoisingColored'
+> Overload resolution failed:
+>  - 'hForColorComponents' is an invalid keyword argument for fastNlMeansDenoisingColored()
+>  - 'hForColorComponents' is an invalid keyword argument for fastNlMeansDenoisingColored()
+
+2026-04-16 11:35:30 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Sharpening (sharpen) params={'strength': 0.175, 'kernel_size': 3}
+2026-04-16 11:35:30 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Sharpening (sharpen) params={'strength': 0.175, 'kernel_size': 3}
+2026-04-16 11:35:30 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Straighten (auto_straighten) params={'strength': 0.35}
+2026-04-16 11:35:30 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Straighten (auto_straighten) params={'strength': 0.35}
+2026-04-16 11:35:30 [DEBUG] photo_editor.output.save_image:194 - Saved: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\Edited\1Q5A9861~2_edited.jpg (115 KB, 1094×729)
+2026-04-16 11:35:30 [DEBUG] photo_editor.output.save_image:194 - Saved: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\Edited\1Q5A9861~2_edited.jpg (115 KB, 1094×729)
+2026-04-16 11:35:30 [DEBUG] photo_editor.metadata.copy_metadata:99 - Metadata copied: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9861~2.jpg → C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\Edited\1Q5A9861~2_edited.jpg
+2026-04-16 11:35:30 [DEBUG] photo_editor.metadata.copy_metadata:99 - Metadata copied: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9861~2.jpg → C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\Edited\1Q5A9861~2_edited.jpg
+2026-04-16 11:35:30 [INFO] photo_editor.pipeline.process_single_image:227 -   Done: 1Q5A9861~2_edited.jpg (indoor, 0.2s)
+2026-04-16 11:35:30 [INFO] photo_editor.pipeline.process_single_image:227 -   Done: 1Q5A9861~2_edited.jpg (indoor, 0.2s)
+2026-04-16 11:35:55 [DEBUG] photo_editor.loader._load_standard:160 - Loaded (OpenCV): C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9929~2.jpg  shape=(729, 1094, 3)
+2026-04-16 11:35:55 [DEBUG] photo_editor.loader._load_standard:160 - Loaded (OpenCV): C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9929~2.jpg  shape=(729, 1094, 3)
+2026-04-16 11:35:55 [DEBUG] photo_editor.classifier.classify_image:219 - Image features: {'brightness': 115.66, 'saturation': 81.89, 'colorfulness': np.float64(46.78), 'edge_density': 0.0147, 'aspect_ratio': 1.501, 'num_faces': 0, 'bg_variance': 19.11, 'width': 1094, 'height': 729}
+2026-04-16 11:35:55 [DEBUG] photo_editor.classifier.classify_image:219 - Image features: {'brightness': 115.66, 'saturation': 81.89, 'colorfulness': np.float64(46.78), 'edge_density': 0.0147, 'aspect_ratio': 1.501, 'num_faces': 0, 'bg_variance': 19.11, 'width': 1094, 'height': 729}
+2026-04-16 11:35:55 [INFO] photo_editor.classifier.classify_image:291 - Classification: outdoor (confidence=55%, faces=0)
+2026-04-16 11:35:55 [INFO] photo_editor.classifier.classify_image:291 - Classification: outdoor (confidence=55%, faces=0)
+2026-04-16 11:35:55 [INFO] photo_editor.pipeline.process_single_image:169 - Processing: 1Q5A9929~2.jpg
+2026-04-16 11:35:55 [INFO] photo_editor.pipeline.process_single_image:169 - Processing: 1Q5A9929~2.jpg
+2026-04-16 11:35:55 [DEBUG] photo_editor.loader._load_standard:160 - Loaded (OpenCV): C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9929~2.jpg  shape=(729, 1094, 3)
+2026-04-16 11:35:55 [DEBUG] photo_editor.loader._load_standard:160 - Loaded (OpenCV): C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9929~2.jpg  shape=(729, 1094, 3)
+2026-04-16 11:35:55 [DEBUG] photo_editor.classifier.classify_image:219 - Image features: {'brightness': 115.66, 'saturation': 81.89, 'colorfulness': np.float64(46.78), 'edge_density': 0.0147, 'aspect_ratio': 1.501, 'num_faces': 0, 'bg_variance': 18.51, 'width': 1094, 'height': 729}
+2026-04-16 11:35:55 [DEBUG] photo_editor.classifier.classify_image:219 - Image features: {'brightness': 115.66, 'saturation': 81.89, 'colorfulness': np.float64(46.78), 'edge_density': 0.0147, 'aspect_ratio': 1.501, 'num_faces': 0, 'bg_variance': 18.51, 'width': 1094, 'height': 729}
+2026-04-16 11:35:55 [INFO] photo_editor.classifier.classify_image:291 - Classification: outdoor (confidence=55%, faces=0)
+2026-04-16 11:35:55 [INFO] photo_editor.classifier.classify_image:291 - Classification: outdoor (confidence=55%, faces=0)
+2026-04-16 11:35:55 [INFO] photo_editor.profiles.get_profile:407 - Profile: style=natural, category=outdoor, strength=strong (×1.0)
+2026-04-16 11:35:55 [INFO] photo_editor.profiles.get_profile:407 - Profile: style=natural, category=outdoor, strength=strong (×1.0)
+2026-04-16 11:35:55 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Auto Levels (auto_levels) params={'strength': 0.25, 'clip_percent': 0.5}
+2026-04-16 11:35:55 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Auto Levels (auto_levels) params={'strength': 0.25, 'clip_percent': 0.5}
+2026-04-16 11:35:55 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Exposure Correction (adjust_exposure) params={'strength': 0.35, 'target_brightness': 128}
+2026-04-16 11:35:55 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Exposure Correction (adjust_exposure) params={'strength': 0.35, 'target_brightness': 128}
+2026-04-16 11:35:55 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: White Balance (adjust_white_balance) params={'strength': 0.3}
+2026-04-16 11:35:55 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: White Balance (adjust_white_balance) params={'strength': 0.3}
+2026-04-16 11:35:55 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Highlight/Shadow Recovery (recover_highlights_shadows) params={'strength': 0.3}
+2026-04-16 11:35:55 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Highlight/Shadow Recovery (recover_highlights_shadows) params={'strength': 0.3}
+2026-04-16 11:35:55 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Contrast (adjust_contrast) params={'strength': 0.2, 'clip_limit': 1.5}
+2026-04-16 11:35:55 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Contrast (adjust_contrast) params={'strength': 0.2, 'clip_limit': 1.5}
+2026-04-16 11:35:55 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Tone Curve (apply_tone_curve) params={'strength': 0.15}
+2026-04-16 11:35:55 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Tone Curve (apply_tone_curve) params={'strength': 0.15}
+2026-04-16 11:35:55 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Vibrance (adjust_vibrance) params={'strength': 0.2, 'amount': 15}
+2026-04-16 11:35:55 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Vibrance (adjust_vibrance) params={'strength': 0.2, 'amount': 15}
+2026-04-16 11:35:55 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Noise Reduction (reduce_noise) params={'strength': 0.2}
+2026-04-16 11:35:55 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Noise Reduction (reduce_noise) params={'strength': 0.2}
+2026-04-16 11:35:55 [WARNING] photo_editor.pipeline.apply_profile:118 -   Edit step 'Noise Reduction' failed: OpenCV(4.13.0) :-1: error: (-5:Bad argument) in function 'fastNlMeansDenoisingColored'
+> Overload resolution failed:
+>  - 'hForColorComponents' is an invalid keyword argument for fastNlMeansDenoisingColored()
+>  - 'hForColorComponents' is an invalid keyword argument for fastNlMeansDenoisingColored()
+
+2026-04-16 11:35:55 [WARNING] photo_editor.pipeline.apply_profile:118 -   Edit step 'Noise Reduction' failed: OpenCV(4.13.0) :-1: error: (-5:Bad argument) in function 'fastNlMeansDenoisingColored'
+> Overload resolution failed:
+>  - 'hForColorComponents' is an invalid keyword argument for fastNlMeansDenoisingColored()
+>  - 'hForColorComponents' is an invalid keyword argument for fastNlMeansDenoisingColored()
+
+2026-04-16 11:35:55 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Sharpening (sharpen) params={'strength': 0.25, 'kernel_size': 3}
+2026-04-16 11:35:55 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Sharpening (sharpen) params={'strength': 0.25, 'kernel_size': 3}
+2026-04-16 11:35:55 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Straighten (auto_straighten) params={'strength': 0.5}
+2026-04-16 11:35:55 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Straighten (auto_straighten) params={'strength': 0.5}
+2026-04-16 11:35:55 [DEBUG] photo_editor.output.save_image:194 - Saved: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\Edited_Natural\1Q5A9929~2_natural.jpg (119 KB, 1094×729)
+2026-04-16 11:35:55 [DEBUG] photo_editor.output.save_image:194 - Saved: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\Edited_Natural\1Q5A9929~2_natural.jpg (119 KB, 1094×729)
+2026-04-16 11:35:55 [DEBUG] photo_editor.metadata.copy_metadata:99 - Metadata copied: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9929~2.jpg → C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\Edited_Natural\1Q5A9929~2_natural.jpg
+2026-04-16 11:35:55 [DEBUG] photo_editor.metadata.copy_metadata:99 - Metadata copied: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9929~2.jpg → C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\Edited_Natural\1Q5A9929~2_natural.jpg
+2026-04-16 11:35:55 [INFO] photo_editor.pipeline.process_single_image:227 -   Done: 1Q5A9929~2_natural.jpg (outdoor, 0.2s)
+2026-04-16 11:35:55 [INFO] photo_editor.pipeline.process_single_image:227 -   Done: 1Q5A9929~2_natural.jpg (outdoor, 0.2s)
+2026-04-16 11:37:37 [DEBUG] photo_editor.loader._load_standard:160 - Loaded (OpenCV): C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9934~2.jpg  shape=(729, 1094, 3)
+2026-04-16 11:37:37 [DEBUG] photo_editor.loader._load_standard:160 - Loaded (OpenCV): C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9934~2.jpg  shape=(729, 1094, 3)
+2026-04-16 11:37:37 [DEBUG] photo_editor.classifier.classify_image:219 - Image features: {'brightness': 125.17, 'saturation': 71.64, 'colorfulness': np.float64(54.99), 'edge_density': 0.0227, 'aspect_ratio': 1.501, 'num_faces': 0, 'bg_variance': 33.9, 'width': 1094, 'height': 729}
+2026-04-16 11:37:37 [DEBUG] photo_editor.classifier.classify_image:219 - Image features: {'brightness': 125.17, 'saturation': 71.64, 'colorfulness': np.float64(54.99), 'edge_density': 0.0227, 'aspect_ratio': 1.501, 'num_faces': 0, 'bg_variance': 33.9, 'width': 1094, 'height': 729}
+2026-04-16 11:37:37 [INFO] photo_editor.classifier.classify_image:291 - Classification: landscape (confidence=77%, faces=0)
+2026-04-16 11:37:37 [INFO] photo_editor.classifier.classify_image:291 - Classification: landscape (confidence=77%, faces=0)
+2026-04-16 11:37:37 [INFO] photo_editor.pipeline.process_single_image:169 - Processing: 1Q5A9934~2.jpg
+2026-04-16 11:37:37 [INFO] photo_editor.pipeline.process_single_image:169 - Processing: 1Q5A9934~2.jpg
+2026-04-16 11:37:37 [DEBUG] photo_editor.loader._load_standard:160 - Loaded (OpenCV): C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9934~2.jpg  shape=(729, 1094, 3)
+2026-04-16 11:37:37 [DEBUG] photo_editor.loader._load_standard:160 - Loaded (OpenCV): C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9934~2.jpg  shape=(729, 1094, 3)
+2026-04-16 11:37:37 [INFO] photo_editor.profiles.get_profile:407 - Profile: style=portrait, category=portrait, strength=medium (×0.7)
+2026-04-16 11:37:37 [INFO] photo_editor.profiles.get_profile:407 - Profile: style=portrait, category=portrait, strength=medium (×0.7)
+2026-04-16 11:37:37 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Auto Levels (auto_levels) params={'strength': 0.21, 'clip_percent': 0.5}
+2026-04-16 11:37:37 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Auto Levels (auto_levels) params={'strength': 0.21, 'clip_percent': 0.5}
+2026-04-16 11:37:37 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Exposure Correction (adjust_exposure) params={'strength': 0.315, 'target_brightness': 135}
+2026-04-16 11:37:37 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Exposure Correction (adjust_exposure) params={'strength': 0.315, 'target_brightness': 135}
+2026-04-16 11:37:37 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: White Balance (adjust_white_balance) params={'strength': 0.27999999999999997}
+2026-04-16 11:37:37 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: White Balance (adjust_white_balance) params={'strength': 0.27999999999999997}
+2026-04-16 11:37:37 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Highlight/Shadow Recovery (recover_highlights_shadows) params={'strength': 0.35}
+2026-04-16 11:37:37 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Highlight/Shadow Recovery (recover_highlights_shadows) params={'strength': 0.35}
+2026-04-16 11:37:37 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Contrast (adjust_contrast) params={'strength': 0.21, 'clip_limit': 1.8}
+2026-04-16 11:37:37 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Contrast (adjust_contrast) params={'strength': 0.21, 'clip_limit': 1.8}
+2026-04-16 11:37:37 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Tone Curve (apply_tone_curve) params={'strength': 0.175}
+2026-04-16 11:37:37 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Tone Curve (apply_tone_curve) params={'strength': 0.175}
+2026-04-16 11:37:37 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Vibrance (adjust_vibrance) params={'strength': 0.21, 'amount': 20}
+2026-04-16 11:37:37 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Vibrance (adjust_vibrance) params={'strength': 0.21, 'amount': 20}
+2026-04-16 11:37:37 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Colour Temperature (adjust_temperature) params={'strength': 0.06999999999999999}
+2026-04-16 11:37:37 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Colour Temperature (adjust_temperature) params={'strength': 0.06999999999999999}
+2026-04-16 11:37:37 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Noise Reduction (reduce_noise) params={'strength': 0.24499999999999997}
+2026-04-16 11:37:37 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Noise Reduction (reduce_noise) params={'strength': 0.24499999999999997}
+2026-04-16 11:37:37 [WARNING] photo_editor.pipeline.apply_profile:118 -   Edit step 'Noise Reduction' failed: OpenCV(4.13.0) :-1: error: (-5:Bad argument) in function 'fastNlMeansDenoisingColored'
+> Overload resolution failed:
+>  - 'hForColorComponents' is an invalid keyword argument for fastNlMeansDenoisingColored()
+>  - 'hForColorComponents' is an invalid keyword argument for fastNlMeansDenoisingColored()
+
+2026-04-16 11:37:37 [WARNING] photo_editor.pipeline.apply_profile:118 -   Edit step 'Noise Reduction' failed: OpenCV(4.13.0) :-1: error: (-5:Bad argument) in function 'fastNlMeansDenoisingColored'
+> Overload resolution failed:
+>  - 'hForColorComponents' is an invalid keyword argument for fastNlMeansDenoisingColored()
+>  - 'hForColorComponents' is an invalid keyword argument for fastNlMeansDenoisingColored()
+
+2026-04-16 11:37:37 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Sharpening (sharpen) params={'strength': 0.21, 'kernel_size': 3}
+2026-04-16 11:37:37 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Sharpening (sharpen) params={'strength': 0.21, 'kernel_size': 3}
+2026-04-16 11:37:37 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Straighten (auto_straighten) params={'strength': 0.35}
+2026-04-16 11:37:37 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Straighten (auto_straighten) params={'strength': 0.35}
+2026-04-16 11:37:37 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Skin Smoothing (smooth_skin) params={'strength': 0.21}
+2026-04-16 11:37:37 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Skin Smoothing (smooth_skin) params={'strength': 0.21}
+2026-04-16 11:37:37 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Vignette (apply_vignette) params={'strength': 0.175}
+2026-04-16 11:37:37 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Vignette (apply_vignette) params={'strength': 0.175}
+2026-04-16 11:37:37 [DEBUG] photo_editor.output.save_image:194 - Saved: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\Edited_Portrait\1Q5A9934~2_portrait.jpg (131 KB, 1094×729)
+2026-04-16 11:37:37 [DEBUG] photo_editor.output.save_image:194 - Saved: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\Edited_Portrait\1Q5A9934~2_portrait.jpg (131 KB, 1094×729)
+2026-04-16 11:37:37 [DEBUG] photo_editor.metadata.copy_metadata:99 - Metadata copied: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9934~2.jpg → C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\Edited_Portrait\1Q5A9934~2_portrait.jpg
+2026-04-16 11:37:37 [DEBUG] photo_editor.metadata.copy_metadata:99 - Metadata copied: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9934~2.jpg → C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\Edited_Portrait\1Q5A9934~2_portrait.jpg
+2026-04-16 11:37:37 [INFO] photo_editor.pipeline.process_single_image:227 -   Done: 1Q5A9934~2_portrait.jpg (portrait, 0.3s)
+2026-04-16 11:37:37 [INFO] photo_editor.pipeline.process_single_image:227 -   Done: 1Q5A9934~2_portrait.jpg (portrait, 0.3s)
+2026-04-16 11:38:27 [DEBUG] photo_editor.loader._load_standard:160 - Loaded (OpenCV): C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9929~2.jpg  shape=(729, 1094, 3)
+2026-04-16 11:38:27 [DEBUG] photo_editor.loader._load_standard:160 - Loaded (OpenCV): C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9929~2.jpg  shape=(729, 1094, 3)
+2026-04-16 11:38:27 [DEBUG] photo_editor.classifier.classify_image:219 - Image features: {'brightness': 115.66, 'saturation': 81.89, 'colorfulness': np.float64(46.78), 'edge_density': 0.0147, 'aspect_ratio': 1.501, 'num_faces': 0, 'bg_variance': 18.86, 'width': 1094, 'height': 729}
+2026-04-16 11:38:27 [DEBUG] photo_editor.classifier.classify_image:219 - Image features: {'brightness': 115.66, 'saturation': 81.89, 'colorfulness': np.float64(46.78), 'edge_density': 0.0147, 'aspect_ratio': 1.501, 'num_faces': 0, 'bg_variance': 18.86, 'width': 1094, 'height': 729}
+2026-04-16 11:38:27 [INFO] photo_editor.classifier.classify_image:291 - Classification: outdoor (confidence=55%, faces=0)
+2026-04-16 11:38:27 [INFO] photo_editor.classifier.classify_image:291 - Classification: outdoor (confidence=55%, faces=0)
+2026-04-16 11:38:27 [INFO] photo_editor.pipeline.process_single_image:169 - Processing: 1Q5A9929~2.jpg
+2026-04-16 11:38:27 [INFO] photo_editor.pipeline.process_single_image:169 - Processing: 1Q5A9929~2.jpg
+2026-04-16 11:38:27 [DEBUG] photo_editor.loader._load_standard:160 - Loaded (OpenCV): C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9929~2.jpg  shape=(729, 1094, 3)
+2026-04-16 11:38:27 [DEBUG] photo_editor.loader._load_standard:160 - Loaded (OpenCV): C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9929~2.jpg  shape=(729, 1094, 3)
+2026-04-16 11:38:27 [INFO] photo_editor.profiles.get_profile:407 - Profile: style=portrait, category=portrait, strength=medium (×0.7)
+2026-04-16 11:38:27 [INFO] photo_editor.profiles.get_profile:407 - Profile: style=portrait, category=portrait, strength=medium (×0.7)
+2026-04-16 11:38:27 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Auto Levels (auto_levels) params={'strength': 0.21, 'clip_percent': 0.5}
+2026-04-16 11:38:27 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Auto Levels (auto_levels) params={'strength': 0.21, 'clip_percent': 0.5}
+2026-04-16 11:38:27 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Exposure Correction (adjust_exposure) params={'strength': 0.315, 'target_brightness': 135}
+2026-04-16 11:38:27 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Exposure Correction (adjust_exposure) params={'strength': 0.315, 'target_brightness': 135}
+2026-04-16 11:38:27 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: White Balance (adjust_white_balance) params={'strength': 0.27999999999999997}
+2026-04-16 11:38:27 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: White Balance (adjust_white_balance) params={'strength': 0.27999999999999997}
+2026-04-16 11:38:27 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Highlight/Shadow Recovery (recover_highlights_shadows) params={'strength': 0.35}
+2026-04-16 11:38:27 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Highlight/Shadow Recovery (recover_highlights_shadows) params={'strength': 0.35}
+2026-04-16 11:38:27 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Contrast (adjust_contrast) params={'strength': 0.21, 'clip_limit': 1.8}
+2026-04-16 11:38:27 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Contrast (adjust_contrast) params={'strength': 0.21, 'clip_limit': 1.8}
+2026-04-16 11:38:27 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Tone Curve (apply_tone_curve) params={'strength': 0.175}
+2026-04-16 11:38:27 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Tone Curve (apply_tone_curve) params={'strength': 0.175}
+2026-04-16 11:38:27 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Vibrance (adjust_vibrance) params={'strength': 0.21, 'amount': 20}
+2026-04-16 11:38:27 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Vibrance (adjust_vibrance) params={'strength': 0.21, 'amount': 20}
+2026-04-16 11:38:27 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Colour Temperature (adjust_temperature) params={'strength': 0.06999999999999999}
+2026-04-16 11:38:27 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Colour Temperature (adjust_temperature) params={'strength': 0.06999999999999999}
+2026-04-16 11:38:27 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Noise Reduction (reduce_noise) params={'strength': 0.24499999999999997}
+2026-04-16 11:38:27 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Noise Reduction (reduce_noise) params={'strength': 0.24499999999999997}
+2026-04-16 11:38:27 [WARNING] photo_editor.pipeline.apply_profile:118 -   Edit step 'Noise Reduction' failed: OpenCV(4.13.0) :-1: error: (-5:Bad argument) in function 'fastNlMeansDenoisingColored'
+> Overload resolution failed:
+>  - 'hForColorComponents' is an invalid keyword argument for fastNlMeansDenoisingColored()
+>  - 'hForColorComponents' is an invalid keyword argument for fastNlMeansDenoisingColored()
+
+2026-04-16 11:38:27 [WARNING] photo_editor.pipeline.apply_profile:118 -   Edit step 'Noise Reduction' failed: OpenCV(4.13.0) :-1: error: (-5:Bad argument) in function 'fastNlMeansDenoisingColored'
+> Overload resolution failed:
+>  - 'hForColorComponents' is an invalid keyword argument for fastNlMeansDenoisingColored()
+>  - 'hForColorComponents' is an invalid keyword argument for fastNlMeansDenoisingColored()
+
+2026-04-16 11:38:27 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Sharpening (sharpen) params={'strength': 0.21, 'kernel_size': 3}
+2026-04-16 11:38:27 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Sharpening (sharpen) params={'strength': 0.21, 'kernel_size': 3}
+2026-04-16 11:38:27 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Straighten (auto_straighten) params={'strength': 0.35}
+2026-04-16 11:38:27 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Straighten (auto_straighten) params={'strength': 0.35}
+2026-04-16 11:38:27 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Skin Smoothing (smooth_skin) params={'strength': 0.21}
+2026-04-16 11:38:27 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Skin Smoothing (smooth_skin) params={'strength': 0.21}
+2026-04-16 11:38:27 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Vignette (apply_vignette) params={'strength': 0.175}
+2026-04-16 11:38:27 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Vignette (apply_vignette) params={'strength': 0.175}
+2026-04-16 11:38:27 [DEBUG] photo_editor.output.save_image:194 - Saved: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\Edited_Portrait\1Q5A9929~2_portrait.jpg (114 KB, 1094×729)
+2026-04-16 11:38:27 [DEBUG] photo_editor.output.save_image:194 - Saved: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\Edited_Portrait\1Q5A9929~2_portrait.jpg (114 KB, 1094×729)
+2026-04-16 11:38:27 [DEBUG] photo_editor.metadata.copy_metadata:99 - Metadata copied: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9929~2.jpg → C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\Edited_Portrait\1Q5A9929~2_portrait.jpg
+2026-04-16 11:38:27 [DEBUG] photo_editor.metadata.copy_metadata:99 - Metadata copied: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9929~2.jpg → C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\Edited_Portrait\1Q5A9929~2_portrait.jpg
+2026-04-16 11:38:27 [INFO] photo_editor.pipeline.process_single_image:227 -   Done: 1Q5A9929~2_portrait.jpg (portrait, 0.3s)
+2026-04-16 11:38:27 [INFO] photo_editor.pipeline.process_single_image:227 -   Done: 1Q5A9929~2_portrait.jpg (portrait, 0.3s)
+2026-04-16 11:38:29 [DEBUG] photo_editor.loader._load_standard:160 - Loaded (OpenCV): C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9861~2.jpg  shape=(729, 1094, 3)
+2026-04-16 11:38:29 [DEBUG] photo_editor.loader._load_standard:160 - Loaded (OpenCV): C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9861~2.jpg  shape=(729, 1094, 3)
+2026-04-16 11:38:29 [DEBUG] photo_editor.classifier.classify_image:219 - Image features: {'brightness': 131.59, 'saturation': 45.11, 'colorfulness': np.float64(22.73), 'edge_density': 0.0127, 'aspect_ratio': 1.501, 'num_faces': 0, 'bg_variance': 21.86, 'width': 1094, 'height': 729}
+2026-04-16 11:38:29 [DEBUG] photo_editor.classifier.classify_image:219 - Image features: {'brightness': 131.59, 'saturation': 45.11, 'colorfulness': np.float64(22.73), 'edge_density': 0.0127, 'aspect_ratio': 1.501, 'num_faces': 0, 'bg_variance': 21.86, 'width': 1094, 'height': 729}
+2026-04-16 11:38:29 [INFO] photo_editor.classifier.classify_image:291 - Classification: indoor (confidence=50%, faces=0)
+2026-04-16 11:38:29 [INFO] photo_editor.classifier.classify_image:291 - Classification: indoor (confidence=50%, faces=0)
+2026-04-16 11:38:29 [INFO] photo_editor.pipeline.process_single_image:169 - Processing: 1Q5A9861~2.jpg
+2026-04-16 11:38:29 [INFO] photo_editor.pipeline.process_single_image:169 - Processing: 1Q5A9861~2.jpg
+2026-04-16 11:38:29 [DEBUG] photo_editor.loader._load_standard:160 - Loaded (OpenCV): C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9861~2.jpg  shape=(729, 1094, 3)
+2026-04-16 11:38:29 [DEBUG] photo_editor.loader._load_standard:160 - Loaded (OpenCV): C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9861~2.jpg  shape=(729, 1094, 3)
+2026-04-16 11:38:29 [INFO] photo_editor.profiles.get_profile:407 - Profile: style=portrait, category=portrait, strength=medium (×0.7)
+2026-04-16 11:38:29 [INFO] photo_editor.profiles.get_profile:407 - Profile: style=portrait, category=portrait, strength=medium (×0.7)
+2026-04-16 11:38:29 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Auto Levels (auto_levels) params={'strength': 0.21, 'clip_percent': 0.5}
+2026-04-16 11:38:29 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Auto Levels (auto_levels) params={'strength': 0.21, 'clip_percent': 0.5}
+2026-04-16 11:38:29 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Exposure Correction (adjust_exposure) params={'strength': 0.315, 'target_brightness': 135}
+2026-04-16 11:38:29 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Exposure Correction (adjust_exposure) params={'strength': 0.315, 'target_brightness': 135}
+2026-04-16 11:38:29 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: White Balance (adjust_white_balance) params={'strength': 0.27999999999999997}
+2026-04-16 11:38:29 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: White Balance (adjust_white_balance) params={'strength': 0.27999999999999997}
+2026-04-16 11:38:29 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Highlight/Shadow Recovery (recover_highlights_shadows) params={'strength': 0.35}
+2026-04-16 11:38:29 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Highlight/Shadow Recovery (recover_highlights_shadows) params={'strength': 0.35}
+2026-04-16 11:38:29 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Contrast (adjust_contrast) params={'strength': 0.21, 'clip_limit': 1.8}
+2026-04-16 11:38:29 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Contrast (adjust_contrast) params={'strength': 0.21, 'clip_limit': 1.8}
+2026-04-16 11:38:29 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Tone Curve (apply_tone_curve) params={'strength': 0.175}
+2026-04-16 11:38:29 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Tone Curve (apply_tone_curve) params={'strength': 0.175}
+2026-04-16 11:38:29 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Vibrance (adjust_vibrance) params={'strength': 0.21, 'amount': 20}
+2026-04-16 11:38:29 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Vibrance (adjust_vibrance) params={'strength': 0.21, 'amount': 20}
+2026-04-16 11:38:29 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Colour Temperature (adjust_temperature) params={'strength': 0.06999999999999999}
+2026-04-16 11:38:29 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Colour Temperature (adjust_temperature) params={'strength': 0.06999999999999999}
+2026-04-16 11:38:29 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Noise Reduction (reduce_noise) params={'strength': 0.24499999999999997}
+2026-04-16 11:38:29 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Noise Reduction (reduce_noise) params={'strength': 0.24499999999999997}
+2026-04-16 11:38:29 [WARNING] photo_editor.pipeline.apply_profile:118 -   Edit step 'Noise Reduction' failed: OpenCV(4.13.0) :-1: error: (-5:Bad argument) in function 'fastNlMeansDenoisingColored'
+> Overload resolution failed:
+>  - 'hForColorComponents' is an invalid keyword argument for fastNlMeansDenoisingColored()
+>  - 'hForColorComponents' is an invalid keyword argument for fastNlMeansDenoisingColored()
+
+2026-04-16 11:38:29 [WARNING] photo_editor.pipeline.apply_profile:118 -   Edit step 'Noise Reduction' failed: OpenCV(4.13.0) :-1: error: (-5:Bad argument) in function 'fastNlMeansDenoisingColored'
+> Overload resolution failed:
+>  - 'hForColorComponents' is an invalid keyword argument for fastNlMeansDenoisingColored()
+>  - 'hForColorComponents' is an invalid keyword argument for fastNlMeansDenoisingColored()
+
+2026-04-16 11:38:29 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Sharpening (sharpen) params={'strength': 0.21, 'kernel_size': 3}
+2026-04-16 11:38:29 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Sharpening (sharpen) params={'strength': 0.21, 'kernel_size': 3}
+2026-04-16 11:38:29 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Straighten (auto_straighten) params={'strength': 0.35}
+2026-04-16 11:38:29 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Straighten (auto_straighten) params={'strength': 0.35}
+2026-04-16 11:38:29 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Skin Smoothing (smooth_skin) params={'strength': 0.21}
+2026-04-16 11:38:29 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Skin Smoothing (smooth_skin) params={'strength': 0.21}
+2026-04-16 11:38:29 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Vignette (apply_vignette) params={'strength': 0.175}
+2026-04-16 11:38:29 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Vignette (apply_vignette) params={'strength': 0.175}
+2026-04-16 11:38:29 [DEBUG] photo_editor.output.save_image:194 - Saved: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\Edited_Portrait\1Q5A9861~2_portrait.jpg (116 KB, 1094×729)
+2026-04-16 11:38:29 [DEBUG] photo_editor.output.save_image:194 - Saved: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\Edited_Portrait\1Q5A9861~2_portrait.jpg (116 KB, 1094×729)
+2026-04-16 11:38:29 [DEBUG] photo_editor.metadata.copy_metadata:99 - Metadata copied: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9861~2.jpg → C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\Edited_Portrait\1Q5A9861~2_portrait.jpg
+2026-04-16 11:38:29 [DEBUG] photo_editor.metadata.copy_metadata:99 - Metadata copied: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9861~2.jpg → C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\Edited_Portrait\1Q5A9861~2_portrait.jpg
+2026-04-16 11:38:29 [INFO] photo_editor.pipeline.process_single_image:227 -   Done: 1Q5A9861~2_portrait.jpg (portrait, 0.3s)
+2026-04-16 11:38:29 [INFO] photo_editor.pipeline.process_single_image:227 -   Done: 1Q5A9861~2_portrait.jpg (portrait, 0.3s)
+2026-04-16 11:38:31 [DEBUG] photo_editor.loader._load_standard:160 - Loaded (OpenCV): C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9860~2.jpg  shape=(729, 1094, 3)
+2026-04-16 11:38:31 [DEBUG] photo_editor.loader._load_standard:160 - Loaded (OpenCV): C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9860~2.jpg  shape=(729, 1094, 3)
+2026-04-16 11:38:31 [DEBUG] photo_editor.classifier.classify_image:219 - Image features: {'brightness': 86.79, 'saturation': 68.53, 'colorfulness': np.float64(24.84), 'edge_density': 0.0199, 'aspect_ratio': 1.501, 'num_faces': 0, 'bg_variance': 16.18, 'width': 1094, 'height': 729}
+2026-04-16 11:38:31 [DEBUG] photo_editor.classifier.classify_image:219 - Image features: {'brightness': 86.79, 'saturation': 68.53, 'colorfulness': np.float64(24.84), 'edge_density': 0.0199, 'aspect_ratio': 1.501, 'num_faces': 0, 'bg_variance': 16.18, 'width': 1094, 'height': 729}
+2026-04-16 11:38:31 [INFO] photo_editor.classifier.classify_image:291 - Classification: unknown (confidence=30%, faces=0)
+2026-04-16 11:38:31 [INFO] photo_editor.classifier.classify_image:291 - Classification: unknown (confidence=30%, faces=0)
+2026-04-16 11:38:31 [INFO] photo_editor.pipeline.process_single_image:169 - Processing: 1Q5A9860~2.jpg
+2026-04-16 11:38:31 [INFO] photo_editor.pipeline.process_single_image:169 - Processing: 1Q5A9860~2.jpg
+2026-04-16 11:38:31 [DEBUG] photo_editor.loader._load_standard:160 - Loaded (OpenCV): C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9860~2.jpg  shape=(729, 1094, 3)
+2026-04-16 11:38:31 [DEBUG] photo_editor.loader._load_standard:160 - Loaded (OpenCV): C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9860~2.jpg  shape=(729, 1094, 3)
+2026-04-16 11:38:31 [INFO] photo_editor.profiles.get_profile:407 - Profile: style=portrait, category=portrait, strength=medium (×0.7)
+2026-04-16 11:38:31 [INFO] photo_editor.profiles.get_profile:407 - Profile: style=portrait, category=portrait, strength=medium (×0.7)
+2026-04-16 11:38:31 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Auto Levels (auto_levels) params={'strength': 0.21, 'clip_percent': 0.5}
+2026-04-16 11:38:31 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Auto Levels (auto_levels) params={'strength': 0.21, 'clip_percent': 0.5}
+2026-04-16 11:38:31 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Exposure Correction (adjust_exposure) params={'strength': 0.315, 'target_brightness': 135}
+2026-04-16 11:38:31 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Exposure Correction (adjust_exposure) params={'strength': 0.315, 'target_brightness': 135}
+2026-04-16 11:38:31 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: White Balance (adjust_white_balance) params={'strength': 0.27999999999999997}
+2026-04-16 11:38:31 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: White Balance (adjust_white_balance) params={'strength': 0.27999999999999997}
+2026-04-16 11:38:31 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Highlight/Shadow Recovery (recover_highlights_shadows) params={'strength': 0.35}
+2026-04-16 11:38:31 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Highlight/Shadow Recovery (recover_highlights_shadows) params={'strength': 0.35}
+2026-04-16 11:38:31 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Contrast (adjust_contrast) params={'strength': 0.21, 'clip_limit': 1.8}
+2026-04-16 11:38:31 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Contrast (adjust_contrast) params={'strength': 0.21, 'clip_limit': 1.8}
+2026-04-16 11:38:31 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Tone Curve (apply_tone_curve) params={'strength': 0.175}
+2026-04-16 11:38:31 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Tone Curve (apply_tone_curve) params={'strength': 0.175}
+2026-04-16 11:38:31 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Vibrance (adjust_vibrance) params={'strength': 0.21, 'amount': 20}
+2026-04-16 11:38:31 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Vibrance (adjust_vibrance) params={'strength': 0.21, 'amount': 20}
+2026-04-16 11:38:31 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Colour Temperature (adjust_temperature) params={'strength': 0.06999999999999999}
+2026-04-16 11:38:31 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Colour Temperature (adjust_temperature) params={'strength': 0.06999999999999999}
+2026-04-16 11:38:31 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Noise Reduction (reduce_noise) params={'strength': 0.24499999999999997}
+2026-04-16 11:38:31 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Noise Reduction (reduce_noise) params={'strength': 0.24499999999999997}
+2026-04-16 11:38:31 [WARNING] photo_editor.pipeline.apply_profile:118 -   Edit step 'Noise Reduction' failed: OpenCV(4.13.0) :-1: error: (-5:Bad argument) in function 'fastNlMeansDenoisingColored'
+> Overload resolution failed:
+>  - 'hForColorComponents' is an invalid keyword argument for fastNlMeansDenoisingColored()
+>  - 'hForColorComponents' is an invalid keyword argument for fastNlMeansDenoisingColored()
+
+2026-04-16 11:38:31 [WARNING] photo_editor.pipeline.apply_profile:118 -   Edit step 'Noise Reduction' failed: OpenCV(4.13.0) :-1: error: (-5:Bad argument) in function 'fastNlMeansDenoisingColored'
+> Overload resolution failed:
+>  - 'hForColorComponents' is an invalid keyword argument for fastNlMeansDenoisingColored()
+>  - 'hForColorComponents' is an invalid keyword argument for fastNlMeansDenoisingColored()
+
+2026-04-16 11:38:31 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Sharpening (sharpen) params={'strength': 0.21, 'kernel_size': 3}
+2026-04-16 11:38:31 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Sharpening (sharpen) params={'strength': 0.21, 'kernel_size': 3}
+2026-04-16 11:38:31 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Straighten (auto_straighten) params={'strength': 0.35}
+2026-04-16 11:38:31 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Straighten (auto_straighten) params={'strength': 0.35}
+2026-04-16 11:38:31 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Skin Smoothing (smooth_skin) params={'strength': 0.21}
+2026-04-16 11:38:31 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Skin Smoothing (smooth_skin) params={'strength': 0.21}
+2026-04-16 11:38:31 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Vignette (apply_vignette) params={'strength': 0.175}
+2026-04-16 11:38:31 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Vignette (apply_vignette) params={'strength': 0.175}
+2026-04-16 11:38:31 [DEBUG] photo_editor.output.save_image:194 - Saved: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\Edited_Portrait\1Q5A9860~2_portrait.jpg (143 KB, 1094×729)
+2026-04-16 11:38:31 [DEBUG] photo_editor.output.save_image:194 - Saved: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\Edited_Portrait\1Q5A9860~2_portrait.jpg (143 KB, 1094×729)
+2026-04-16 11:38:31 [DEBUG] photo_editor.metadata.copy_metadata:99 - Metadata copied: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9860~2.jpg → C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\Edited_Portrait\1Q5A9860~2_portrait.jpg
+2026-04-16 11:38:31 [DEBUG] photo_editor.metadata.copy_metadata:99 - Metadata copied: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9860~2.jpg → C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\Edited_Portrait\1Q5A9860~2_portrait.jpg
+2026-04-16 11:38:31 [INFO] photo_editor.pipeline.process_single_image:227 -   Done: 1Q5A9860~2_portrait.jpg (portrait, 0.3s)
+2026-04-16 11:38:31 [INFO] photo_editor.pipeline.process_single_image:227 -   Done: 1Q5A9860~2_portrait.jpg (portrait, 0.3s)
+2026-04-16 11:39:33 [DEBUG] photo_editor.loader._load_standard:160 - Loaded (OpenCV): C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9861~2.jpg  shape=(729, 1094, 3)
+2026-04-16 11:39:33 [DEBUG] photo_editor.loader._load_standard:160 - Loaded (OpenCV): C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9861~2.jpg  shape=(729, 1094, 3)
+2026-04-16 11:39:33 [DEBUG] photo_editor.classifier.classify_image:219 - Image features: {'brightness': 131.59, 'saturation': 45.11, 'colorfulness': np.float64(22.73), 'edge_density': 0.0127, 'aspect_ratio': 1.501, 'num_faces': 0, 'bg_variance': 21.92, 'width': 1094, 'height': 729}
+2026-04-16 11:39:33 [DEBUG] photo_editor.classifier.classify_image:219 - Image features: {'brightness': 131.59, 'saturation': 45.11, 'colorfulness': np.float64(22.73), 'edge_density': 0.0127, 'aspect_ratio': 1.501, 'num_faces': 0, 'bg_variance': 21.92, 'width': 1094, 'height': 729}
+2026-04-16 11:39:33 [INFO] photo_editor.classifier.classify_image:291 - Classification: indoor (confidence=50%, faces=0)
+2026-04-16 11:39:33 [INFO] photo_editor.classifier.classify_image:291 - Classification: indoor (confidence=50%, faces=0)
+2026-04-16 11:39:33 [INFO] photo_editor.pipeline.process_single_image:169 - Processing: 1Q5A9861~2.jpg
+2026-04-16 11:39:33 [INFO] photo_editor.pipeline.process_single_image:169 - Processing: 1Q5A9861~2.jpg
+2026-04-16 11:39:33 [DEBUG] photo_editor.loader._load_standard:160 - Loaded (OpenCV): C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9861~2.jpg  shape=(729, 1094, 3)
+2026-04-16 11:39:33 [DEBUG] photo_editor.loader._load_standard:160 - Loaded (OpenCV): C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9861~2.jpg  shape=(729, 1094, 3)
+2026-04-16 11:39:33 [INFO] photo_editor.profiles.get_profile:407 - Profile: style=portrait, category=portrait, strength=medium (×0.7)
+2026-04-16 11:39:33 [INFO] photo_editor.profiles.get_profile:407 - Profile: style=portrait, category=portrait, strength=medium (×0.7)
+2026-04-16 11:39:33 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Auto Levels (auto_levels) params={'strength': 0.21, 'clip_percent': 0.5}
+2026-04-16 11:39:33 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Auto Levels (auto_levels) params={'strength': 0.21, 'clip_percent': 0.5}
+2026-04-16 11:39:33 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Exposure Correction (adjust_exposure) params={'strength': 0.315, 'target_brightness': 135}
+2026-04-16 11:39:33 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Exposure Correction (adjust_exposure) params={'strength': 0.315, 'target_brightness': 135}
+2026-04-16 11:39:33 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: White Balance (adjust_white_balance) params={'strength': 0.27999999999999997}
+2026-04-16 11:39:33 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: White Balance (adjust_white_balance) params={'strength': 0.27999999999999997}
+2026-04-16 11:39:33 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Highlight/Shadow Recovery (recover_highlights_shadows) params={'strength': 0.35}
+2026-04-16 11:39:33 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Highlight/Shadow Recovery (recover_highlights_shadows) params={'strength': 0.35}
+2026-04-16 11:39:33 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Contrast (adjust_contrast) params={'strength': 0.21, 'clip_limit': 1.8}
+2026-04-16 11:39:33 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Contrast (adjust_contrast) params={'strength': 0.21, 'clip_limit': 1.8}
+2026-04-16 11:39:33 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Tone Curve (apply_tone_curve) params={'strength': 0.175}
+2026-04-16 11:39:33 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Tone Curve (apply_tone_curve) params={'strength': 0.175}
+2026-04-16 11:39:33 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Vibrance (adjust_vibrance) params={'strength': 0.21, 'amount': 20}
+2026-04-16 11:39:33 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Vibrance (adjust_vibrance) params={'strength': 0.21, 'amount': 20}
+2026-04-16 11:39:33 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Colour Temperature (adjust_temperature) params={'strength': 0.06999999999999999}
+2026-04-16 11:39:33 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Colour Temperature (adjust_temperature) params={'strength': 0.06999999999999999}
+2026-04-16 11:39:33 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Noise Reduction (reduce_noise) params={'strength': 0.24499999999999997}
+2026-04-16 11:39:33 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Noise Reduction (reduce_noise) params={'strength': 0.24499999999999997}
+2026-04-16 11:39:33 [WARNING] photo_editor.pipeline.apply_profile:118 -   Edit step 'Noise Reduction' failed: OpenCV(4.13.0) :-1: error: (-5:Bad argument) in function 'fastNlMeansDenoisingColored'
+> Overload resolution failed:
+>  - 'hForColorComponents' is an invalid keyword argument for fastNlMeansDenoisingColored()
+>  - 'hForColorComponents' is an invalid keyword argument for fastNlMeansDenoisingColored()
+
+2026-04-16 11:39:33 [WARNING] photo_editor.pipeline.apply_profile:118 -   Edit step 'Noise Reduction' failed: OpenCV(4.13.0) :-1: error: (-5:Bad argument) in function 'fastNlMeansDenoisingColored'
+> Overload resolution failed:
+>  - 'hForColorComponents' is an invalid keyword argument for fastNlMeansDenoisingColored()
+>  - 'hForColorComponents' is an invalid keyword argument for fastNlMeansDenoisingColored()
+
+2026-04-16 11:39:33 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Sharpening (sharpen) params={'strength': 0.21, 'kernel_size': 3}
+2026-04-16 11:39:33 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Sharpening (sharpen) params={'strength': 0.21, 'kernel_size': 3}
+2026-04-16 11:39:33 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Straighten (auto_straighten) params={'strength': 0.35}
+2026-04-16 11:39:33 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Straighten (auto_straighten) params={'strength': 0.35}
+2026-04-16 11:39:33 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Skin Smoothing (smooth_skin) params={'strength': 0.21}
+2026-04-16 11:39:33 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Skin Smoothing (smooth_skin) params={'strength': 0.21}
+2026-04-16 11:39:33 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Vignette (apply_vignette) params={'strength': 0.175}
+2026-04-16 11:39:33 [DEBUG] photo_editor.pipeline.apply_profile:115 -   Applying: Vignette (apply_vignette) params={'strength': 0.175}
+2026-04-16 11:39:33 [DEBUG] photo_editor.output.save_image:194 - Saved: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\Edited_Portrait\1Q5A9861~2_portrait.jpg (116 KB, 1094×729)
+2026-04-16 11:39:33 [DEBUG] photo_editor.output.save_image:194 - Saved: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\Edited_Portrait\1Q5A9861~2_portrait.jpg (116 KB, 1094×729)
+2026-04-16 11:39:33 [DEBUG] photo_editor.metadata.copy_metadata:99 - Metadata copied: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9861~2.jpg → C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\Edited_Portrait\1Q5A9861~2_portrait.jpg
+2026-04-16 11:39:33 [DEBUG] photo_editor.metadata.copy_metadata:99 - Metadata copied: C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\1Q5A9861~2.jpg → C:\Users\Omar.Pacheco\OneDrive - Pariveda Solutions, Inc\Pictures\Japan\Edited_Portrait\1Q5A9861~2_portrait.jpg
+2026-04-16 11:39:33 [INFO] photo_editor.pipeline.process_single_image:227 -   Done: 1Q5A9861~2_portrait.jpg (portrait, 0.3s)
+2026-04-16 11:39:33 [INFO] photo_editor.pipeline.process_single_image:227 -   Done: 1Q5A9861~2_portrait.jpg (portrait, 0.3s)

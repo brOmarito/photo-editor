@@ -1,0 +1,24 @@
+# Photo Editor - Dependencies
+# Install with: pip install -r requirements.txt
+
+# UI Framework
+PySide6>=6.5.0
+
+# Image Processing
+opencv-python>=4.8.0
+Pillow>=10.0.0
+scikit-image>=0.21.0
+numpy>=1.24.0
+
+# RAW Image Support (optional but recommended)
+rawpy>=0.18.0
+
+# EXIF / Metadata Handling
+piexif>=1.1.3
+
+# GPU Acceleration (optional - install separately if CUDA available)
+# pip install opencv-python-headless  # if you don't need GUI from OpenCV
+# For CUDA: pip install opencv-contrib-python with CUDA build
+
+# Logging
+colorlog>=6.7.0
