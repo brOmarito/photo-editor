@@ -13,6 +13,7 @@ import traceback
 from typing import Optional, List, Dict, Any, Callable
 
 import numpy as np
+import cv2
 
 from src.core import image_edits
 from src.core.image_loader import load_image, discover_images
@@ -78,7 +79,8 @@ class EditResult:
 
 def apply_profile(image: np.ndarray, profile: EditProfile,
                   step_callback: Optional[Callable] = None,
-                  disabled_edits: Optional[set] = None) -> np.ndarray:
+                  disabled_edits: Optional[set] = None,
+                  edit_intensities: Optional[dict] = None) -> np.ndarray:
     """
     Apply all enabled edit steps from a profile to an image.
 
@@ -88,6 +90,11 @@ def apply_profile(image: np.ndarray, profile: EditProfile,
         step_callback: Optional callback(step_name, step_index, total_steps)
                         called before each step for progress updates.
         disabled_edits: Optional set of function_name strings to skip.
+        edit_intensities: Optional dict mapping function_name to an
+                          intensity percentage (0–100).  100 = full
+                          effect (default), 0 = no effect.  Values
+                          between 0 and 100 alpha-blend the step’s
+                          result with the pre-step image.
 
     Returns:
         Edited BGR image (uint8).
@@ -95,6 +102,7 @@ def apply_profile(image: np.ndarray, profile: EditProfile,
     result = image.copy()
     total = len(profile.steps)
     disabled = disabled_edits or set()
+    intensities = edit_intensities or {}
 
     for i, step in enumerate(profile.steps):
         if not step.enabled:
@@ -113,7 +121,19 @@ def apply_profile(image: np.ndarray, profile: EditProfile,
 
         try:
             logger.debug(f"  Applying: {step.name} ({step.function_name}) params={step.params}")
-            result = func(result, **step.params)
+            step_result = func(result, **step.params)
+
+            # --- Intensity blending ---
+            intensity = intensities.get(step.function_name, 100)
+            if intensity >= 100:
+                result = step_result
+            elif intensity <= 0:
+                pass  # keep result unchanged (effectively skip)
+            else:
+                alpha = intensity / 100.0
+                result = cv2.addWeighted(
+                    step_result, alpha, result, 1.0 - alpha, 0
+                )
         except Exception as e:
             logger.warning(f"  Edit step '{step.name}' failed: {e}")
             # Continue with what we have rather than failing entirely
@@ -130,6 +150,7 @@ def process_single_image(
     quality: int = 95,
     category_override: Optional[ImageCategory] = None,
     disabled_edits: Optional[set] = None,
+    edit_intensities: Optional[dict] = None,
     step_callback: Optional[Callable] = None,
     keep_images: bool = False,
     preview_only: bool = False,
@@ -154,6 +175,7 @@ def process_single_image(
         quality: JPEG/WebP quality (1-100).
         category_override: Force a specific image category.
         disabled_edits: Set of edit function names to skip.
+        edit_intensities: Dict mapping edit function names to 0–100 intensity.
         step_callback: Progress callback for individual edit steps.
         keep_images: If True, store original/edited arrays in result (for preview).
         preview_only: If True, skip save and metadata steps (preview rendering).
@@ -201,7 +223,8 @@ def process_single_image(
         # ----------------------------------------------------------
         # Step 4: Apply edits
         # ----------------------------------------------------------
-        edited = apply_profile(original, profile, step_callback, disabled_edits)
+        edited = apply_profile(original, profile, step_callback,
+                               disabled_edits, edit_intensities)
 
         if keep_images:
             result.edited_image = edited.copy()

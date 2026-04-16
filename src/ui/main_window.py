@@ -72,13 +72,16 @@ class PreviewWorker(QThread):
     def __init__(self, file_path: str, style: EditStyle,
                  strength: EditStrength,
                  category_override: Optional[ImageCategory],
-                 disabled_edits: set, parent=None):
+                 disabled_edits: set,
+                 edit_intensities: Optional[dict] = None,
+                 parent=None):
         super().__init__(parent)
         self.file_path = file_path
         self.style = style
         self.strength = strength
         self.category_override = category_override
         self.disabled_edits = disabled_edits
+        self.edit_intensities = edit_intensities or {}
         self._cancelled = False
 
     def cancel(self):
@@ -101,6 +104,7 @@ class PreviewWorker(QThread):
                 edit_strength=self.strength,
                 category_override=self.category_override,
                 disabled_edits=self.disabled_edits,
+                edit_intensities=self.edit_intensities,
                 keep_images=True,
                 preview_only=True,
             )
@@ -166,6 +170,7 @@ class BatchWorker(QThread):
                 quality=s.quality,
                 category_override=s.get_category_override_enum(),
                 disabled_edits=s.disabled_edits,
+                edit_intensities=s.edit_intensities,
                 step_callback=step_callback,
                 keep_images=False,  # Don't hold all images in memory
             )
@@ -619,6 +624,7 @@ class MainWindow(QMainWindow):
             strength=self._settings.get_strength(),
             category_override=self._settings.get_category_override(),
             disabled_edits=self._settings.get_disabled_edits(),
+            edit_intensities=self._settings.get_edit_intensities(),
             parent=self,
         )
         self._preview_worker.preview_ready.connect(self._on_preview_ready)

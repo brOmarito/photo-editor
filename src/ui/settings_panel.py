@@ -13,7 +13,7 @@ Includes:
 """
 
 from dataclasses import dataclass, field
-from typing import Optional, Set
+from typing import Dict, Optional, Set
 
 from PySide6.QtWidgets import (
     QWidget, QVBoxLayout, QHBoxLayout, QLabel, QPushButton,
@@ -26,6 +26,10 @@ from src.core.editing_profiles import EditStyle, EditStrength, get_available_sty
 from src.core.image_classifier import ImageCategory, get_category_display_name
 
 
+# Default intensity for every edit step (100 = full effect)
+_DEFAULT_INTENSITY = 100
+
+
 @dataclass
 class ImageSettings:
     """Complete set of editing settings for a single image."""
@@ -34,6 +38,7 @@ class ImageSettings:
     strength: EditStrength = EditStrength.MEDIUM
     category_override: Optional[str] = "auto"  # "auto" or an ImageCategory value
     disabled_edits: Set[str] = field(default_factory=set)
+    edit_intensities: Dict[str, int] = field(default_factory=dict)  # func_name -> 0‒100
     output_format: Optional[str] = None  # None ⇒ same as original
     quality: int = 95
     resize_enabled: bool = False
@@ -217,13 +222,15 @@ class SettingsPanel(QWidget):
         self._layout.addWidget(group)
 
     # ------------------------------------------------------------------
-    # Individual Edit Toggles
+    # Individual Edit Toggles + Intensity Sliders
     # ------------------------------------------------------------------
     def _build_edits_section(self):
-        group = QGroupBox("Edit Steps (toggle on/off)")
+        group = QGroupBox("Edit Steps")
         layout = QVBoxLayout(group)
 
         self._edit_checkboxes = {}
+        self._edit_sliders = {}     # func_name -> QSlider
+        self._edit_slider_labels = {}  # func_name -> QLabel (shows %)
         edit_names = [
             ("auto_levels", "Auto Levels"),
             ("adjust_exposure", "Exposure Correction"),
@@ -243,11 +250,41 @@ class SettingsPanel(QWidget):
         ]
 
         for func_name, display_name in edit_names:
+            # --- row: checkbox ----
             cb = QCheckBox(display_name)
             cb.setChecked(True)
             cb.stateChanged.connect(self._on_setting_changed)
             layout.addWidget(cb)
             self._edit_checkboxes[func_name] = cb
+
+            # --- row: slider + percentage label ----
+            slider_row = QHBoxLayout()
+            slider_row.setContentsMargins(20, 0, 0, 0)  # indent under checkbox
+
+            slider = QSlider(Qt.Horizontal)
+            slider.setRange(0, 100)
+            slider.setValue(_DEFAULT_INTENSITY)
+            slider.setTickInterval(10)
+            slider.setFixedHeight(18)
+            slider.valueChanged.connect(self._on_setting_changed)
+            slider_row.addWidget(slider, 1)
+
+            pct_label = QLabel(f"{_DEFAULT_INTENSITY}%")
+            pct_label.setFixedWidth(32)
+            pct_label.setStyleSheet("color: #aaa; font-size: 10px;")
+            # Keep the label in sync with the slider
+            slider.valueChanged.connect(
+                lambda v, lbl=pct_label: lbl.setText(f"{v}%")
+            )
+            slider_row.addWidget(pct_label)
+
+            layout.addLayout(slider_row)
+
+            self._edit_sliders[func_name] = slider
+            self._edit_slider_labels[func_name] = pct_label
+
+            # Disable slider when the checkbox is unchecked
+            cb.toggled.connect(slider.setEnabled)
 
         self._layout.addWidget(group)
 
@@ -344,6 +381,13 @@ class SettingsPanel(QWidget):
                 disabled.add(func_name)
         return disabled
 
+    def get_edit_intensities(self) -> Dict[str, int]:
+        """Return a dict mapping each edit function name to its intensity (0–100)."""
+        return {
+            func_name: slider.value()
+            for func_name, slider in self._edit_sliders.items()
+        }
+
     def get_output_format(self):
         """Return the selected output format, or None for same as original."""
         value = self._format_combo.currentData()
@@ -371,6 +415,7 @@ class SettingsPanel(QWidget):
             strength=self.get_strength(),
             category_override=self._category_combo.currentData(),
             disabled_edits=self.get_disabled_edits(),
+            edit_intensities=self.get_edit_intensities(),
             output_format=self._format_combo.currentData() or None,
             quality=self._quality_slider.value(),
             resize_enabled=self._resize_check.isChecked(),
@@ -398,6 +443,8 @@ class SettingsPanel(QWidget):
                 w.blockSignals(True)
             for cb in self._edit_checkboxes.values():
                 cb.blockSignals(True)
+            for sl in self._edit_sliders.values():
+                sl.blockSignals(True)
 
         # ---- Style ----
         idx = self._style_combo.findData(s.style.value)
@@ -415,9 +462,14 @@ class SettingsPanel(QWidget):
         if idx >= 0:
             self._category_combo.setCurrentIndex(idx)
 
-        # ---- Edit toggles ----
+        # ---- Edit toggles + intensities ----
         for func_name, cb in self._edit_checkboxes.items():
             cb.setChecked(func_name not in s.disabled_edits)
+        for func_name, slider in self._edit_sliders.items():
+            val = s.edit_intensities.get(func_name, _DEFAULT_INTENSITY)
+            slider.setValue(val)
+            self._edit_slider_labels[func_name].setText(f"{val}%")
+            slider.setEnabled(func_name not in s.disabled_edits)
 
         # ---- Output format ----
         fmt_data = s.output_format if s.output_format else ""
@@ -445,4 +497,6 @@ class SettingsPanel(QWidget):
                 w.blockSignals(False)
             for cb in self._edit_checkboxes.values():
                 cb.blockSignals(False)
+            for sl in self._edit_sliders.values():
+                sl.blockSignals(False)
             self.blockSignals(False)
